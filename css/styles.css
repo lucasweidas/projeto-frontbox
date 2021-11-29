@@ -297,7 +297,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	/* align-items: center; */
 	margin: 0 auto;
 }
 
@@ -338,6 +338,10 @@ img {
 @media (max-width: 800px) {
 	.vantagem {
 		max-width: 220px;
+	}
+
+	.vantagens {
+		justify-content: center;
 	}
 }
 
