@@ -297,6 +297,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
 	margin: 0 auto;
 }
 
@@ -374,7 +375,9 @@ img {
 .newsletter__assinar {
 	background-color: var(--cor-pink-dark);
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 }
 
 #txtemail {
@@ -400,16 +403,8 @@ img {
 }
 
 @media (max-width: 820px) {
-	#txtemail {
-		width: 270px;
-	}
-
 	.newsletter__assinar {
 		margin-top: 10px;
-	}
-
-	.newsletter-btn__assinar {
-		margin: 0 5px;
 	}
 }
 
