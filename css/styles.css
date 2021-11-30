@@ -417,7 +417,8 @@ img {
 }
 
 .newsletter__texto {
-	margin-right: 20px;
+	margin-right: 56px;
+	margin-bottom: 10px;
 }
 
 .newsletter__titulo {
@@ -453,15 +454,17 @@ img {
 	text-transform: uppercase;
 	margin: 0 30px;
 	padding: 10px;
+	background-color: transparent;
+	border: none;
 }
 
-.newsletter-btn__assinar:hover {
+.newsletter-btn__assinar a:hover {
 	color: var(--cor-green-light);
 }
 
-@media (max-width: 820px) {
-	.newsletter__assinar {
-		margin-top: 10px;
+@media (max-width: 600px) {
+	#txtemail {
+		width: 100%;
 	}
 }
 
