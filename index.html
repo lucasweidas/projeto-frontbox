@@ -9,6 +9,7 @@
 		crossorigin="anonymous" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/da6342bd32.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -19,15 +20,16 @@
 				<div class="menu__logo">
 					<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
 				</div>
-				<nav class="nav">
+				<nav class="nav" id="navLinks">
+					<i class="fas fa-times" onclick="hideMenu()"></i>
 					<ul class="nav__list">
 						<li><a href="#somos" class="nav__link">Quem Somos</a></li>
 						<li><a href="#cursos" class="nav__link">Nossos Cursos</a></li>
 						<li><a href="#planos" class="nav__link">Planos</a></li>
 						<li><a href="#vantagens" class="nav__link">Vantagens</a></li>
-						<li><a href=""></a></li>
 					</ul>
 				</nav>
+				<i class="fas fa-bars" onclick="showMenu()"></i>
 			</menu>
 		</section>
 		<h1 class="intro">Aprenda a programar, <br> um projeto por vez!</h1>
@@ -192,5 +194,18 @@
 			<img src="img/logo.png" alt="Logo">
 		</a>
 	</footer>
+
+	<!-- JavaScript para o menu -->
+	<script>
+		var navLinks = document.querySelector("#navLinks")
+
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+
+		function hideMenu() {
+			navLinks.style.right = "-200px";
+		}
+	</script>
 </body>
 </html>
