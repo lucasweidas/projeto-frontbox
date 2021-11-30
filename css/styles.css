@@ -135,7 +135,7 @@ img {
 	.nav {
 		position: fixed;
 		background-color: var(--cor-pink-light);
-		height: 220px;
+		height: 100vh;
 		width: 200px;
 		top: 0;
 		right: -200px;
